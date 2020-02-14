@@ -1,0 +1,32 @@
+﻿.btn{
+	appearance: none;
+	display: inline-block;
+	border: 1vw/3.2 solid @black;
+	vertical-align: top;
+	padding: 0 24vw/3.2;
+	background-color: @black;
+	color: #fff;
+	font-size: 16vw/3.2;
+	font-weight: 500;
+	line-height: 50vw/3.2;
+	text-align: center;
+	border-radius: 3vw/3.2;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	&--cart{
+		&:before{
+			content: '\e911';
+			font-family: icomoon;
+			font-size: 19em/16;
+			vertical-align: bottom;
+			margin: 0 13em/16 0 -10em/16
+		}
+	}
+	&--block{
+		display: block;
+		width: 100%;
+		padding: 0 10vw/3.2;
+	}
+}

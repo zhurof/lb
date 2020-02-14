@@ -1,0 +1,260 @@
+﻿@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Thin'), local('Montserrat-Thin'),
+			url('../fonts/montserrat/Montserrat-Thin.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
+			url('../fonts/montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-ExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Light'), local('Montserrat-Light'),
+			url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+			url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+			url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+			url('../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+			url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+			url('../fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Black'), local('Montserrat-Black'),
+			url('../fonts/montserrat/Montserrat-Black.woff2') format('woff2'),
+			url('../fonts/montserrat/Montserrat-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: local('Georgia'), local('Georgia'),
+			url('../fonts/georgia/Georgia.woff2') format('woff2'),
+			url('../fonts/georgia/Georgia.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: local('Georgia Italic'), local('Georgia-Italic'),
+			url('../fonts/georgia/Georgia-Italic.woff2') format('woff2'),
+			url('../fonts/georgia/Georgia-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: local('Georgia Bold'), local('Georgia-Bold'),
+			url('../fonts/georgia/Georgia-Bold.woff2') format('woff2'),
+			url('../fonts/georgia/Georgia-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Georgia';
+	src: local('Georgia BoldItalic'), local('Georgia-BoldItalic'),
+			url('../fonts/georgia/Georgia-BoldItalic.woff2') format('woff2'),
+			url('../fonts/georgia/Georgia-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('../fonts/icomoon/icomoon.ttf?sgmuxj') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?sgmuxj') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?sgmuxj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-down:before {
+  content: "\e900";
+}
+.icon-angle-down-alt:before {
+  content: "\e901";
+}
+.icon-angle-left:before {
+  content: "\e902";
+}
+.icon-angle-left-alt:before {
+  content: "\e903";
+}
+.icon-angle-right:before {
+  content: "\e904";
+}
+.icon-angle-right-alt:before {
+  content: "\e905";
+}
+.icon-angle-up:before {
+  content: "\e906";
+}
+.icon-angle-up-alt:before {
+  content: "\e907";
+}
+.icon-approve:before {
+  content: "\e908";
+}
+.icon-arrow-down:before {
+  content: "\e909";
+}
+.icon-arrow-down-long:before {
+  content: "\e90a";
+}
+.icon-arrow-left:before {
+  content: "\e90b";
+}
+.icon-arrow-left-long:before {
+  content: "\e90c";
+}
+.icon-arrow-right:before {
+  content: "\e90d";
+}
+.icon-arrow-right-long:before {
+  content: "\e90e";
+}
+.icon-arrow-up:before {
+  content: "\e90f";
+}
+.icon-arrow-up-long:before {
+  content: "\e910";
+}
+.icon-bag:before {
+  content: "\e911";
+}
+.icon-bag-checked:before {
+  content: "\e912";
+}
+.icon-caret-down:before {
+  content: "\e913";
+}
+.icon-caret-left:before {
+  content: "\e914";
+}
+.icon-caret-right:before {
+  content: "\e915";
+}
+.icon-caret-up:before {
+  content: "\e916";
+}
+.icon-check:before {
+  content: "\e917";
+}
+.icon-close:before {
+  content: "\e918";
+}
+.icon-close-circle:before {
+  content: "\e919";
+}
+.icon-envelope:before {
+  content: "\e91a";
+}
+.icon-facebook:before {
+  content: "\e91b";
+}
+.icon-heart:before {
+  content: "\e91c";
+}
+.icon-heart-o:before {
+  content: "\e91d";
+}
+.icon-instagram:before {
+  content: "\e91e";
+}
+.icon-linen:before {
+  content: "\e91f";
+}
+.icon-magnify:before {
+  content: "\e920";
+}
+.icon-map-marker:before {
+  content: "\e921";
+}
+.icon-menu-btn:before {
+  content: "\e922";
+}
+.icon-online-shop:before {
+  content: "\e923";
+}
+.icon-trash:before {
+  content: "\e924";
+}
+.icon-vk:before {
+  content: "\e925";
+}
+.icon-world-plane:before {
+  content: "\e926";
+}
