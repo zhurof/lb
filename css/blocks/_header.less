@@ -2,6 +2,7 @@
 	padding: 10.17vw/3.2 0;
 	background-color: #fff;
 	position: fixed;
+	z-index: 4;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -34,6 +35,26 @@
 		text-decoration: none;
 		&--active{
 			color: @black;
+		}
+	}
+}
+@media(orientation: landscape){
+	.header{
+		padding: 10.17vh/3.2 0;
+		box-shadow: 0 3vh/3.2 3vh/3.2 rgba(0, 0, 0, 0.15);
+		&__menu-btn{
+			font-size: 20vh/3.2;
+		}
+		&__logo{
+			width: 29vh/3.2;
+			margin: 0 0 0 11.44vh/3.2;
+			&--alt{
+				width: 89vh/3.2;
+				margin-right: auto;
+			}
+		}
+		&__tool{
+			margin: 0 0 0 19vh/3.2;
 		}
 	}
 }

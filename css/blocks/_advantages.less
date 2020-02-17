@@ -1,0 +1,36 @@
+﻿.advantages{
+	padding: 40vw/3.2 0;
+	&__item{
+		display: flex;
+		align-items: center;
+		margin: 0 0 35vw/3.2;
+		font-size: 16vw/3.2;
+		line-height: normal;
+		font-style: italic;
+		color: @black;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&-pic{
+			width: 70vw/3.2;
+			flex: 0 0 auto;
+			padding-right: 16vw/3.2
+		}
+		&-text{
+			flex: 1 1 auto;
+		}
+	}
+}
+@media(orientation: landscape){
+	.advantages{
+		padding: 40vh/3.2 0;
+		&__item{
+			margin: 0 0 35vh/3.2;
+			font-size: 16vh/3.2;
+			&-pic{
+				width: 70vh/3.2;
+				padding-right: 16vh/3.2
+			}
+		}
+	}
+}

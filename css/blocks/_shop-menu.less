@@ -1,0 +1,39 @@
+﻿.shop-menu{
+	.unlist;
+	color: @black;
+	>li{
+		border-bottom: 1vw/3.2 solid #E0E0E0;
+		>a{
+			display: block;
+			position: relative;
+			text-decoration: none;
+			color: inherit;
+			padding: 20vw/3.2 40vw/3.2 20vw/3.2 20vw/3.2;
+			&:after{
+				content: '\e905';
+				font-family: icomoon;
+				line-height: 1;
+				display: inline-block;
+				font-size: 20vw/3.2;
+				color: #BDBDBD;
+				position: absolute;
+				right: 20vw/3.2;
+				top: ~"calc(50% - .5em)";
+			}
+		}
+	}
+}
+@media(orientation: landscape){
+	.shop-menu{
+		>li{
+			border-bottom: 1vh/3.2 solid #E0E0E0;
+			>a{
+				padding: 20vh/3.2 40vh/3.2 20vh/3.2 20vh/3.2;
+				&:after{
+					font-size: 20vh/3.2;
+					right: 20vh/3.2;
+				}
+			}
+		}
+	}
+}

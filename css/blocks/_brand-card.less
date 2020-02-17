@@ -1,0 +1,28 @@
+﻿.brand-card{
+	width: 180vw/3.2;
+	height: 105vw/3.2;
+	border-radius: 3vw/3.2;
+	box-shadow: 0 1vw/3.2 4vw/3.2 rgba(0, 0, 0, 0.15);
+	margin: 0 10vw/3.2 15vw/3.2;
+	flex: 0 0 auto;
+	position: relative;
+	img{
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		max-width: 70%;
+		max-height: 70%;
+		transform: translate(-50%,-50%);
+	}
+}
+@media(orientation: landscape){
+	.brand-card{
+		width: 180vh/3.2;
+		height: 105vh/3.2;
+		border-radius: 3vh/3.2;
+		box-shadow: 0 1vh/3.2 4vh/3.2 rgba(0, 0, 0, 0.15);
+		margin: 0 10vh/3.2 15vh/3.2;
+		flex: 0 0 auto;
+	}
+}

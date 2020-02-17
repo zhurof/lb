@@ -1,0 +1,29 @@
+﻿.banner{
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	color: #fff;
+	min-height: 353vw/3.2;
+	padding: 39vw/3.2 0;
+	&__title{
+		font-size: 24vw/3.2;
+		color: inherit;
+	}
+	&__logo{
+		display: block;
+		width: 100%;
+		margin-left: -15vw/3.2;
+	}
+}
+@media(orientation: landscape){
+	.banner{
+		min-height: 353vh/3.2;
+		padding: 39vh/3.2 0;
+		&__title{
+			font-size: 24vh/3.2;
+		}
+		&__logo{
+			margin-left: -15vh/3.2;
+		}
+	}
+}
