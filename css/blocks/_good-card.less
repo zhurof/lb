@@ -1,31 +1,31 @@
 ﻿.good-card{
-	width: 130vw/3.2;
-	margin: 0 5vw/3.2 30vw/3.2;
+	width: 130rem;
+	margin: 0 5rem 30rem;
 	flex: 0 0 auto;
 	&__head{
 		position: relative;
-		margin: 0 0 13vw/3.2;
+		margin: 0 0 13rem;
 		&:last-child{
 			margin-bottom: 0;
 		}
 	}
 	&__info{
 		position: absolute;
-		bottom: 4vw/3.2;
-		right: -5vw/3.2;
+		bottom: 4rem;
+		right: -5rem;
 	}
 	&__label{
 		display: block;
 		border-radius: 100vw;
-		font-size: 9vw/3.2;
-		border: 1vw/3.2 solid @black;
+		font-size: 9rem;
+		border: 1rem solid @black;
 		line-height: normal;
-		padding: 3vw/3.2 8vw/3.2;
+		padding: 3rem 8rem;
 		font-weight: bold;
 		color: #fff;
 		background-color: @black;
 		text-align: center;
-		margin: 0 0 5vw/3.2;
+		margin: 0 0 5rem;
 		&:last-child{
 			margin-bottom: 0;
 		}
@@ -46,19 +46,19 @@
 		font-weight: inherit;
 		color: #4F4F4F;
 		line-height: normal;
-		margin: 0 0 4vw/3.2;
+		margin: 0 0 4rem;
 		padding-right: .2em;
 		&:last-child{
 			margin-bottom: 0;
 		}
 	}
 	&__category{
-		font-size: 12vw/3.2;
+		font-size: 12rem;
 		line-height: normal;
 		color: #BDBDBD;
 	}
 	&__main{
-		margin: 0 0 8vw/3.2;
+		margin: 0 0 8rem;
 		&:last-child{
 			margin-bottom: 0;
 		}
@@ -71,59 +71,19 @@
 	&__price{
 		display: inline-block;
 		color: @black;
-		font-size: 12vw/3.2;
+		font-size: 12rem;
 		line-height: normal;
-		padding: 4vw/3.2 0;		
-		margin: 0 7vw/3.2 0 0;
+		padding: 4rem 0;		
+		margin: 0 7rem 0 0;
 		&--new{
-			padding-left: 7vw/3.2;
-			padding-right: 7vw/3.2;
-			border-radius: 10vw/3.2;
+			padding-left: 7rem;
+			padding-right: 7rem;
+			border-radius: 10rem;
 			color: #fff;
 			background-color: #E9B4A3;
 		}
 		&--old{
 			text-decoration: line-through;
-		}
-	}
-}
-@media(orientation: landscape){
-	.good-card{
-		width: 130vh/3.2;
-		margin: 0 5vh/3.2 30vh/3.2;
-		&__head{
-			margin: 0 0 13vh/3.2;
-		}
-		&__info{
-			bottom: 4vh/3.2;
-			right: -5vh/3.2;
-		}
-		&__label{
-			border-radius: 100vh;
-			font-size: 9vh/3.2;
-			border: 1vh/3.2 solid @black;
-			padding: 3vh/3.2 8vw/3.2;
-			margin: 0 0 5vh/3.2;
-		}
-		&__title{
-			margin: 0 0 4vh/3.2;
-		}
-		&__category{
-			font-size: 12vh/3.2;
-		}
-		&__main{
-			margin: 0 0 8vh/3.2;
-		}
-		&__price{
-			font-size: 12vh/3.2;
-			line-height: normal;
-			padding: 4vh/3.2 0;		
-			margin: 0 7vh/3.2 0 0;
-			&--new{
-				padding-left: 7vh/3.2;
-				padding-right: 7vh/3.2;
-				border-radius: 10vh/3.2;
-			}
 		}
 	}
 }

@@ -1,20 +1,24 @@
 ﻿.btn{
 	appearance: none;
 	display: inline-block;
-	border: 1vw/3.2 solid @black;
+	border: 1rem solid @black;
 	vertical-align: top;
-	padding: 0 24vw/3.2;
+	padding: 0 24rem;
 	background-color: @black;
 	color: #fff;
-	font-size: 16vw/3.2;
+	font-size: 16rem;
 	font-weight: 500;
-	line-height: 50vw/3.2;
+	line-height: 50rem;
 	text-align: center;
-	border-radius: 3vw/3.2;
+	border-radius: 3rem;
 	text-decoration: none;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	&--thin{
+		background-color: transparent;
+		color: @black;
+	}
 	&--cart{
 		&:before{
 			content: '\e911';
@@ -24,21 +28,18 @@
 			margin: 0 13em/16 0 -10em/16
 		}
 	}
+	&--heart{
+		&:before{
+			content: '\e91d';
+			font-family: icomoon;
+			font-size: 19em/16;
+			vertical-align: bottom;
+			margin: 0 13em/16 0 -10em/16
+		}
+	}
 	&--block{
 		display: block;
 		width: 100%;
-		padding: 0 10vw/3.2;
-	}
-}
-@media(orientation: landscape){
-	.btn{
-		border: 1vh/3.2 solid @black;
-		font-size: 16vh/3.2;
-		line-height: 50vh/3.2;
-		border-radius: 3vh/3.2;
-		padding: 0 24vh/3.2;
-		&--block{
-			padding: 0 10vh/3.2;
-		}
+		padding: 0 10rem;
 	}
 }
