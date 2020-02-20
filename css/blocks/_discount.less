@@ -1,0 +1,42 @@
+﻿.discount{
+	position: relative;
+	padding: 0 0 30rem;
+	&:before{
+		content: '';
+		display: block;
+		border-bottom: 1rem solid #E0E0E0;
+		width: ~"calc(100% - 40rem)";
+		position: absolute;
+		bottom: 0;
+		left: 20rem;
+	}
+	&:last-child:before{
+		display: none;
+	}
+	&__img{
+		display: block;
+		width: 100%;
+		margin: 0 0 21rem;
+		filter: drop-shadow(0 4rem 12rem rgba(0, 0, 0, 0.06));
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__chars{
+		width: auto;
+		line-height: normal;
+		td,th{
+			border: none;
+			padding: 5rem 7rem;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+		th{
+			color: #828282;
+		}
+	}
+}

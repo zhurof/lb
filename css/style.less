@@ -68,9 +68,14 @@ h3{
 	font-size: 14rem;
 	line-height: normal;
 	font-weight: bold;
+	color: @black;
 	margin: 0 0 1em;
 	&:last-child{
 		margin-bottom: 0;
+	}
+	a{
+		text-decoration: none;
+		border-bottom: 1rem dashed;
 	}
 }
 [type=text],
@@ -91,6 +96,37 @@ textarea{
 	&:focus{
 		outline: none;
 		border-color: @black;
+	}
+}
+.table-wrapper{
+	max-width: ~"calc(100% + 40rem)";
+	margin: 0 -20rem;
+	padding: 0 20rem;
+	overflow: auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	color: @black;
+	line-height: 1.463;	
+	p{
+		margin: 0;
+	}
+}
+td,th{
+	font-weight: inherit;
+	text-align: inherit;
+	vertical-align: middle;
+	border: 1rem solid #BDBDBD;
+	padding: 13rem;
+}
+thead{
+	th{
+		border: none;
+		font-size: 12rem;
+		line-height: normal;
+		color: #828282;
+		padding: 7rem 0;
 	}
 }
 .wrapper{
@@ -128,4 +164,6 @@ textarea{
 @import "blocks/_brands-page";
 @import "blocks/_brand-page";
 @import "blocks/_categories";
+@import "blocks/_gallery";
+@import "blocks/_discount";
 @import "blocks/_footer";

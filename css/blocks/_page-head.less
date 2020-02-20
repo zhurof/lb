@@ -2,4 +2,43 @@
 	border-bottom: 1rem solid #E0E0E0;
 	min-height: 47rem;
 	padding: 0 0 6.6rem;
+	&--clip-border{
+		border-color: transparent;
+		position: relative;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 20rem;
+			width: ~"calc(100% - 40rem)";
+			border-bottom: 1rem solid #E0E0E0;
+		}
+	}
+	&--no-border{
+		border-bottom: none;
+	}
+	&__title{
+		margin: 0 0 17rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__nav-link{
+		display: block;
+		text-decoration: none;
+		color: @black;
+		margin: 0 0 12rem;
+		&:before,
+		&:after{
+			font-family: icomoon;
+			font-weight: 400;
+			font-size: 70%;
+			color: #333;
+		}
+		&:after{
+			content: '\e904';			
+			margin-left: .5em;			
+		}
+	}
 }
