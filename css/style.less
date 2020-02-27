@@ -98,6 +98,56 @@ textarea{
 		border-color: @black;
 	}
 }
+select{
+	appearance: none;
+	display: block;
+	width: 100%;
+	margin: 0 0 11rem;
+	font-size: 14rem;
+	line-height: normal;
+	border: 1rem solid #BDBDBD;
+	border-radius: 3rem;
+	padding: 11rem 15rem;
+	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiNCREJEQkQiLz48L3N2Zz4K) no-repeat right 7px center/8px auto;
+	&::-ms-expand{
+		display: none;
+	}
+	&:focus{
+		outline: none;
+		border-color: @black;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiMxOTFFMjciLz48L3N2Zz4K);
+	}
+}
+@supports(-moz-appearance: textfield){
+	select{
+		padding: 7.4rem 15rem;
+	}		
+}
+.number-field{
+	display: inline-flex;
+	align-items: center;
+	&__btn{
+		display: inline-block;
+		color: #BDBDBD;
+		width: 25rem;
+		height: 25rem;
+		border: 1.5rem solid;
+		text-align: center;
+		line-height: 22rem;
+		font-size: 16rem;
+		flex: 0 0 auto;
+		border-radius: 50%;
+		user-select: none;
+	}
+	&__input{
+		border: none;
+		padding: 5rem 0;
+		width: 55rem;
+		text-align: center;
+		margin: 0;
+	}
+}	
+
 .table-wrapper{
 	max-width: ~"calc(100% + 40rem)";
 	margin: 0 -20rem;
@@ -166,4 +216,6 @@ thead{
 @import "blocks/_categories";
 @import "blocks/_gallery";
 @import "blocks/_discount";
+@import "blocks/_good";
+@import "blocks/_good-block";
 @import "blocks/_footer";
