@@ -6,6 +6,7 @@
 	padding: 0 24rem;
 	background-color: @black;
 	color: #fff;
+	font-family: Montserrat,sans-serif;
 	font-size: 16rem;
 	font-weight: 500;
 	line-height: 50rem;
@@ -18,6 +19,16 @@
 	&--thin{
 		background-color: transparent;
 		color: @black;
+	}
+	&--white{
+		border-color: #fff;
+		background-color: #fff;
+		color: @black;
+	}
+	&--small{
+		font-size: 14rem;
+		line-height: 38rem;
+		padding: 0 1em;
 	}
 	&--cart{
 		&:before{
@@ -35,6 +46,15 @@
 			font-size: 19em/16;
 			vertical-align: bottom;
 			margin: 0 13em/16 0 -10em/16
+		}
+	}
+	&--next{
+		&:after{
+			content: '\e90e';
+			font-family: icomoon;
+			font-size: 17em/16;
+			vertical-align: bottom;
+			margin: 0 0 0 15em/17
 		}
 	}
 	&--block{

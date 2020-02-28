@@ -5,11 +5,18 @@
 	font-size: 12rem;
 	line-height: normal;
 	color: #BDBDBD;
+	&--big{
+		font-size: inherit;
+		padding: 20rem 0;
+	}
 	&__list{
 		.unlist;
 		display: flex;
 		align-items: baseline;
 		>li{
+			&.active{
+				color: @black;
+			}
 			>a{
 				color: inherit;
 				text-decoration: none;

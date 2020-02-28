@@ -78,6 +78,14 @@ h3{
 		border-bottom: 1rem dashed;
 	}
 }
+h4{
+	color: @black;
+	margin: 0 0 1em;
+	font: inherit;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
 [type=text],
 [type=tel],
 [type=email],
@@ -86,16 +94,58 @@ h3{
 textarea{
 	display: block;
 	width: 100%;
+	font-family: inherit;
 	font-size: 14rem;
 	line-height: normal;
 	border: 1rem solid #BDBDBD;
 	border-radius: 3rem;
-	padding: 11rem 18rem;
+	padding: 10rem 18rem;
 	margin: 0 0 11rem;
 	color: @black;
+	min-width: 0;
 	&:focus{
 		outline: none;
 		border-color: @black;
+	}
+}
+[type=checkbox]{
+	appearance: none;
+	display: inline-block;
+	width: 18rem;
+	height: 18rem;
+	border: 1rem solid #BDBDBD;
+	border-radius: 3rem;
+	flex: 0 0 auto;
+	margin: 0 10rem 0 0;
+	background-color: #fff;
+	color: transparent;
+	font: normal normal 13rem/16rem icomoon;
+	text-align: center;
+	&:checked{
+		color: @black;
+	}
+	&:focus{
+		outline: none;
+	}
+	&:before{
+		content: '\e917';
+	}
+}
+[type=radio]{
+	appearance: none;
+	display: inline-block;
+	width: 16rem;
+	height: 16rem;
+	border: 1rem solid #BDBDBD;
+	border-radius: 50%;
+	padding: 4px;
+	flex: 0 0 auto;
+	&:checked{
+		background-color: @black;
+		background-clip: content-box;
+	}
+	&:focus{
+		outline: none;
 	}
 }
 select{
@@ -104,11 +154,12 @@ select{
 	width: 100%;
 	margin: 0 0 11rem;
 	font-size: 14rem;
+	font-family: inherit;
 	line-height: normal;
 	border: 1rem solid #BDBDBD;
 	border-radius: 3rem;
-	padding: 11rem 15rem;
-	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiNCREJEQkQiLz48L3N2Zz4K) no-repeat right 7px center/8px auto;
+	padding: 10rem 15rem;
+	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiNCREJEQkQiLz48L3N2Zz4K) no-repeat right 7rem center/8rem auto;
 	&::-ms-expand{
 		display: none;
 	}
@@ -120,7 +171,7 @@ select{
 }
 @supports(-moz-appearance: textfield){
 	select{
-		padding: 7.4rem 15rem;
+		padding: 9rem 15rem;
 	}		
 }
 .number-field{
@@ -218,4 +269,8 @@ thead{
 @import "blocks/_discount";
 @import "blocks/_good";
 @import "blocks/_good-block";
+//для боьшинства блоков корзины
+@import "blocks/_order";
+//для боьшинства блоков личного кабинета
+@import "blocks/_account";
 @import "blocks/_footer";
