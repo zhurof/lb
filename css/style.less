@@ -91,6 +91,7 @@ h4{
 [type=email],
 [type=password],
 [type=url],
+[type=date],
 textarea{
 	display: block;
 	width: 100%;
@@ -99,7 +100,7 @@ textarea{
 	line-height: normal;
 	border: 1rem solid #BDBDBD;
 	border-radius: 3rem;
-	padding: 10rem 18rem;
+	padding: 10rem 15rem;
 	margin: 0 0 11rem;
 	color: @black;
 	min-width: 0;
@@ -197,8 +198,59 @@ select{
 		text-align: center;
 		margin: 0;
 	}
-}	
-
+}
+.field{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 11rem;
+	&--date{
+		max-width: 176rem;
+	}
+	&__label{
+		display: block;
+		width: 100%;
+		font-size: 12rem;
+		line-height: normal;
+		margin: 0 0 5rem;
+	}
+	&__input{
+		margin: 0;
+		width: 100%;
+		order: 1;
+	}
+	&__input:focus + &__label{
+		color: @black;
+		font-weight: 600;
+	}
+	&__message{
+		font-size: 12rem;
+		line-height: normal;
+		color: #BDBDBD;
+		margin-top: 13rem;
+		order: 2;
+	}
+}
+.multifield{
+	display: flex;
+	align-items: flex-start;
+	>*{
+		flex: 1 1 auto;
+		margin-right: 12rem;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.double-field{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	>*{
+		width: ~"calc(50% - 12.5rem)";
+	}
+}
+	
+//таблицы
 .table-wrapper{
 	max-width: ~"calc(100% + 40rem)";
 	margin: 0 -20rem;

@@ -102,6 +102,7 @@ h4:last-child {
 [type=email],
 [type=password],
 [type=url],
+[type=date],
 textarea {
   display: block;
   width: 100%;
@@ -110,7 +111,7 @@ textarea {
   line-height: normal;
   border: 1rem solid #BDBDBD;
   border-radius: 3rem;
-  padding: 10rem 18rem;
+  padding: 10rem 15rem;
   margin: 0 0 11rem;
   color: #191e27;
   min-width: 0;
@@ -120,6 +121,7 @@ textarea {
 [type=email]:focus,
 [type=password]:focus,
 [type=url]:focus,
+[type=date]:focus,
 textarea:focus {
   outline: none;
   border-color: #191e27;
@@ -232,6 +234,77 @@ select:focus {
   width: 55rem;
   text-align: center;
   margin: 0;
+}
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 11rem;
+}
+.field--date {
+  max-width: 176rem;
+}
+.field__label {
+  display: block;
+  width: 100%;
+  font-size: 12rem;
+  line-height: normal;
+  margin: 0 0 5rem;
+}
+.field__input {
+  margin: 0;
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.field__input:focus + .field__label {
+  color: #191e27;
+  font-weight: 600;
+}
+.field__message {
+  font-size: 12rem;
+  line-height: normal;
+  color: #BDBDBD;
+  margin-top: 13rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.multifield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.multifield > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-right: 12rem;
+}
+.multifield > *:last-child {
+  margin-right: 0;
+}
+.double-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.double-field > * {
+  width: calc(50% - 12.5rem);
 }
 .table-wrapper {
   max-width: calc(100% + 40rem);
@@ -1993,6 +2066,119 @@ thead th {
 }
 .delivery__text p:last-child {
   margin-bottom: 0;
+}
+.account {
+  padding: 37rem 0 86rem;
+}
+.account__title {
+  font-size: 18rem;
+  margin: 0 0 1.9em;
+}
+.account__text {
+  font-size: 12rem;
+  color: #191e27;
+  line-height: normal;
+  margin: 0 0 50rem;
+}
+.account__text:last-child {
+  margin-bottom: 0;
+}
+.account__footer {
+  position: relative;
+  margin-top: 40rem;
+  padding-top: 21rem;
+  text-align: center;
+  line-height: normal;
+}
+.account__footer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20rem;
+  top: 0;
+  width: calc(100% + 40rem);
+  border-top: 1px solid #E0E0E0;
+}
+.account__note {
+  color: #828282;
+  margin: 0 0 25rem;
+}
+.account__note:last-child {
+  margin-bottom: 0;
+}
+.account__note a {
+  color: inherit;
+}
+/*смена адреса*/
+.address {
+  padding: 37rem 0 63rem;
+}
+.address__list {
+  margin: 0 0 35rem;
+}
+.address__list:last-child {
+  margin-bottom: 0;
+}
+.address__item {
+  margin: 0 0 33rem;
+  line-height: 1.463;
+}
+.address__item:last-child {
+  margin-bottom: 0;
+}
+.address__item-title {
+  font-size: 16rem;
+  font-weight: 500;
+  margin: 0 0 5rem;
+}
+.address__item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: #191e27;
+  font-size: 12rem;
+  line-height: normal;
+  margin: 10rem 0 0;
+}
+.address__item-tool {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.address__add-btn {
+  display: inline-block;
+  color: #191e27;
+  line-height: normal;
+  text-decoration: none;
+  margin: 0 0 32rem;
+}
+.address__add-btn:last-child {
+  margin-bottom: 0;
+}
+.address__title {
+  font-size: 18rem;
+  margin: 0 0 1.1em;
+}
+.address__footer {
+  margin: 10rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.address__remove-btn {
+  text-decoration: underline;
+  margin: 0 10rem 0 0;
 }
 /*одна запись в истории заказов*/
 .order-item {

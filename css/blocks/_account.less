@@ -1,4 +1,104 @@
-﻿/*одна запись в истории заказов*/
+﻿.account{
+	padding: 37rem 0 86rem;
+	&__title{
+		font-size: 18rem;
+		margin: 0 0 1.9em;
+	}
+	&__text{
+		font-size: 12rem;
+		color: @black;
+		line-height: normal;
+		margin: 0 0 50rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__footer{
+		position: relative;
+		margin-top: 40rem;
+		padding-top: 21rem;
+		text-align: center;
+		line-height: normal;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: -20rem;
+			top: 0;
+			width: ~"calc(100% + 40rem)";
+			border-top: 1px solid #E0E0E0;
+		}
+	}
+	&__note{
+		color: #828282;
+		margin: 0 0 25rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		a{
+			color: inherit;
+		}
+	}
+}
+/*смена адреса*/
+.address{
+	padding: 37rem 0 63rem;
+	&__list{
+		margin: 0 0 35rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__item{
+		margin: 0 0 33rem;
+		line-height: 1.463;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&-title{
+			font-size: 16rem;
+			font-weight: 500;
+			margin: 0 0 5rem;
+		}
+		&-footer{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			color: @black;
+			font-size: 12rem;
+			line-height: normal;
+			margin: 10rem 0 0;
+		}
+		&-tool{
+			flex: 1 1 50%;
+		}
+	}
+	&__add-btn{
+		display: inline-block;
+		color: @black;
+		line-height: normal;
+		text-decoration: none;
+		margin: 0 0 32rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__title{
+		font-size: 18rem;
+		margin: 0 0 1.1em;
+	}
+	&__footer{
+		margin: 10rem 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__remove-btn{
+		text-decoration: underline;
+		margin: 0 10rem 0 0;
+	}
+}
+/*одна запись в истории заказов*/
 .order-item{
 	border-bottom: 1rem solid #E0E0E0;
 	padding: 24rem 0 27rem;
