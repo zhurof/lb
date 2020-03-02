@@ -38,7 +38,7 @@
 					</div>
 					<a href="post-news.php" class="post-card__link">Читать дальше</a>
 				</div>
-				<img src="img/loader.svg" alt="" class="blog__loader">
+				<img src="img/loader.svg" alt="" class="loader blog__loader">
 			</div>			
 		</div>
 	</main>

@@ -1,1 +1,36 @@
-﻿
+﻿/*одна запись в истории заказов*/
+.order-item{
+	border-bottom: 1rem solid #E0E0E0;
+	padding: 24rem 0 27rem;
+	line-height: normal;
+	color: @black;
+	font-weight: 400;
+	&--active{
+		border-bottom: none;
+		background-color: #F7F7F7;
+	}
+	a{
+		color: inherit;
+	}	
+	&__row{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin: 0 0 16rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&--gray{
+			color: #828282;
+		}
+	}
+	&__column{
+		width: ~"calc(50% - 20rem)";		
+	}
+	&__title{
+		font-weight: 500;
+	}
+	&__price{
+		font-size: 16em/14;
+	}
+}

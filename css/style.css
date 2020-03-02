@@ -266,6 +266,11 @@ thead th {
 .wrapper {
   padding: 0 20rem;
 }
+.loader {
+  display: block;
+  width: 28rem;
+  margin: 27rem auto;
+}
 @media (orientation: landscape) {
   html {
     font-size: 0.3125vh;
@@ -417,12 +422,7 @@ thead th {
   visibility: hidden;
 }
 .blog {
-  padding: 0 0 70rem;
-}
-.blog__loader {
-  display: block;
-  margin: 0 auto;
-  width: 28rem;
+  padding: 0 0 40rem;
 }
 .post-card {
   margin: 0 0 40rem;
@@ -957,7 +957,6 @@ thead th {
   margin-top: 20rem;
 }
 .catalog__loader {
-  display: block;
   margin: 30rem auto 0;
 }
 .page-head {
@@ -1206,7 +1205,7 @@ thead th {
   line-height: 1.36;
 }
 .gallery {
-  padding: 0 0 35rem;
+  padding: 0 0 10rem;
 }
 .gallery__title {
   margin: 0 0 .75em;
@@ -1235,10 +1234,6 @@ thead th {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-.gallery__loader {
-  display: block;
-  margin: 25rem auto 0;
 }
 .discount {
   position: relative;
@@ -1741,6 +1736,36 @@ thead th {
   font-size: 18rem;
   margin: 0 0 1.2em;
 }
+.order-head__title--back {
+  font-size: 16rem;
+  font-family: inherit;
+  font-style: inherit;
+}
+.order-head__title--back > a {
+  text-decoration: none;
+}
+.order-head__title--back > a:before {
+  content: '\e90b';
+  font-family: icomoon;
+  font-size: 1.1875em;
+  line-height: 1;
+  vertical-align: top;
+  margin-right: 0.39473684em;
+}
+.order-head__status {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 22rem;
+  background-color: #E9B4A3;
+  color: #fff;
+  font-weight: bold;
+  line-height: normal;
+  padding: 6rem 10rem;
+  border-radius: 3rem;
+}
+.order-head__status:last-child {
+  margin-bottom: 0;
+}
 .order-head__subtitle {
   font-weight: 600;
 }
@@ -1776,6 +1801,10 @@ thead th {
 }
 .order-block__info th {
   color: #828282;
+}
+.order-block__info strong {
+  font-weight: inherit;
+  font-size: 1.16666667em;
 }
 .order-block__total {
   line-height: normal;
@@ -1844,6 +1873,24 @@ thead th {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
+.order-block__back-link {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  font-size: 16rem;
+  line-height: normal;
+  text-decoration: none;
+}
+.order-block__back-link:before {
+  content: '\e90b';
+  font-family: icomoon;
+  font-size: 1.1875em;
+  line-height: 1;
+  vertical-align: top;
+  margin-right: 0.39473684em;
+}
 .delivery__title {
   font-size: 18rem;
   margin: 0 0 30rem;
@@ -1870,6 +1917,8 @@ thead th {
   line-height: normal;
   color: #191e27;
   margin: 0 0 20rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 .delivery__option--short {
   margin-left: 30px;
@@ -1923,6 +1972,69 @@ thead th {
   color: #191e27;
   padding: 10rem 0;
   margin: 0 0 40rem;
+}
+.delivery__text {
+  display: none;
+  margin: -7rem 0 17rem;
+  line-height: normal;
+  color: #191e27;
+  padding: 15rem 14.5rem;
+  border: 1rem solid #BDBDBD;
+  border-radius: 3rem;
+}
+.delivery__text:last-child {
+  margin-bottom: 0;
+}
+.delivery__text:first-child {
+  margin-top: 0;
+}
+.delivery__text p {
+  margin: 0 0 .5em;
+}
+.delivery__text p:last-child {
+  margin-bottom: 0;
+}
+/*одна запись в истории заказов*/
+.order-item {
+  border-bottom: 1rem solid #E0E0E0;
+  padding: 24rem 0 27rem;
+  line-height: normal;
+  color: #191e27;
+  font-weight: 400;
+}
+.order-item--active {
+  border-bottom: none;
+  background-color: #F7F7F7;
+}
+.order-item a {
+  color: inherit;
+}
+.order-item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 16rem;
+}
+.order-item__row:last-child {
+  margin-bottom: 0;
+}
+.order-item__row--gray {
+  color: #828282;
+}
+.order-item__column {
+  width: calc(50% - 20rem);
+}
+.order-item__title {
+  font-weight: 500;
+}
+.order-item__price {
+  font-size: 1.14285714em;
 }
 .footer {
   padding: 15rem 0;

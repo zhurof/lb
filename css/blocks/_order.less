@@ -76,7 +76,37 @@
 	border-bottom: 1rem solid #E0E0E0;
 	&__title{
 		font-size: 18rem;
-		margin: 0 0 1.2em;		
+		margin: 0 0 1.2em;
+		&--back{
+			font-size: 16rem;
+			font-family: inherit;
+			font-style: inherit;
+			>a{
+				text-decoration: none;
+				&:before{
+					content: '\e90b';
+					font-family: icomoon;
+					font-size: 19em/16;
+					line-height: 1;
+					vertical-align: top;
+					margin-right: 7.5em/19;
+				}
+			}
+		}
+	}
+	&__status{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 22rem;
+		background-color: #E9B4A3;
+		color: #fff;
+		font-weight: bold;
+		line-height: normal;
+		padding: 6rem 10rem;
+		border-radius: 3rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 	&__subtitle{
 		font-weight: 600;
@@ -109,6 +139,10 @@
 		}
 		th{
 			color: #828282;
+		}
+		strong{
+			font-weight: inherit;
+			font-size: 14em/12;
 		}
 	}
 	&__total{
@@ -165,6 +199,22 @@
 			flex: 1 0 auto
 		}
 	}
+	&__back-link{
+		display: block;
+		width: max-content;
+		max-width: 100%;
+		font-size: 16rem;
+		line-height: normal;
+		text-decoration: none;
+		&:before{
+			content: '\e90b';
+			font-family: icomoon;
+			font-size: 19em/16;
+			line-height: 1;
+			vertical-align: top;
+			margin-right: 7.5em/19;
+		}
+	}
 }
 .delivery{
 	&__title{
@@ -189,6 +239,7 @@
 		line-height: normal;
 		color: @black;
 		margin: 0 0 20rem;
+		transition: all .3s ease;
 		&--short{
 			margin-left: 30px
 		}
@@ -237,5 +288,27 @@
 		color: @black;
 		padding: 10rem 0;
 		margin: 0 0 40rem;
+	}
+	&__text{
+		display: none;
+		margin: -7rem 0 17rem;
+		line-height: normal;
+		color: @black;
+		padding: 15rem 14.5rem;
+		border: 1rem solid #BDBDBD;
+		border-radius: 3rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:first-child{
+			margin-top: 0;
+		}
+		p{
+			margin: 0 0 .5em;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+			
 	}
 }

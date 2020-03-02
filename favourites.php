@@ -122,7 +122,7 @@
 						</div>
 					</div>					
 				</div>
-				<img src="img/loader.svg" alt="" class="catalog__loader">
+				<img src="img/loader.svg" alt="" class="loader catalog__loader">
 			</div>
 		</div>
 	</main>

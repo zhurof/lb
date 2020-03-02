@@ -26,7 +26,7 @@
 					<a href="#" class="gallery__item"><img src="img/gallery/2.jpg" alt=""></a>
 					<a href="#" class="gallery__item"><img src="img/gallery/3.jpg" alt=""></a>
 				</div>
-				<img src="img/loader.svg" class="gallery__loader" alt="">
+				<img src="img/loader.svg" class="loader gallery__loader" alt="">
 			</div>
 		</div>
 	</main>
