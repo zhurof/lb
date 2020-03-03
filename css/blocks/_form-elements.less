@@ -1,0 +1,228 @@
+﻿[type=text],
+[type=tel],
+[type=email],
+[type=password],
+[type=url],
+[type=date],
+textarea{
+	display: block;
+	width: 100%;
+	font-family: inherit;
+	font-size: 14rem;
+	line-height: normal;
+	border: 1rem solid #BDBDBD;
+	border-radius: 3rem;
+	padding: 10rem 15rem;
+	margin: 0 0 11rem;
+	color: @black;
+	min-width: 0;
+	&:focus{
+		outline: none;
+		border-color: @black;
+	}
+}
+[type=checkbox]{
+	appearance: none;
+	display: inline-block;
+	width: 18rem;
+	height: 18rem;
+	border: 1rem solid #BDBDBD;
+	border-radius: 3rem;
+	flex: 0 0 auto;
+	margin: 0 10rem 0 0;
+	background-color: #fff;
+	color: transparent;
+	font: normal normal 13rem/16rem icomoon;
+	text-align: center;
+	&:checked{
+		color: @black;
+	}
+	&:focus{
+		outline: none;
+	}
+	&:before{
+		content: '\e917';
+	}
+}
+[type=radio]{
+	appearance: none;
+	display: inline-block;
+	width: 16rem;
+	height: 16rem;
+	border: 1rem solid #BDBDBD;
+	border-radius: 50%;
+	padding: 4px;
+	flex: 0 0 auto;
+	&:checked{
+		background-color: @black;
+		background-clip: content-box;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+select{
+	appearance: none;
+	display: block;
+	width: 100%;
+	margin: 0 0 11rem;
+	font-size: 14rem;
+	font-family: inherit;
+	line-height: normal;
+	border: 1rem solid #BDBDBD;
+	border-radius: 3rem;
+	padding: 10rem 15rem;
+	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiNCREJEQkQiLz48L3N2Zz4K) no-repeat right 7rem center/8rem auto;
+	&::-ms-expand{
+		display: none;
+	}
+	&:focus{
+		outline: none;
+		border-color: @black;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiMxOTFFMjciLz48L3N2Zz4K);
+	}
+}
+@supports(-moz-appearance: textfield){
+	select{
+		padding: 9rem 15rem;
+	}		
+}
+.number-field{
+	display: inline-flex;
+	align-items: center;
+	&__btn{
+		display: inline-block;
+		color: #BDBDBD;
+		width: 25rem;
+		height: 25rem;
+		border: 1.5rem solid;
+		text-align: center;
+		line-height: 22rem;
+		font-size: 16rem;
+		flex: 0 0 auto;
+		border-radius: 50%;
+		user-select: none;
+	}
+	&__input{
+		border: none;
+		padding: 5rem 0;
+		width: 55rem;
+		text-align: center;
+		margin: 0;
+	}
+}
+.hint{
+	display: block;
+	background-color: #fff;
+	border: 1rem solid #BDBDBD;
+	border-radius: 3rem;
+	font-size: 12rem;
+	line-height: normal;
+	color: #000;
+	padding: 11.5rem 21rem 17rem;
+	&__text{
+		display: block;
+		margin: 0 0 10.6rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__example{
+		display: block;
+		margin-left: 27rem;
+		border-left: 5.27rem solid;
+		padding-left: 3.78rem;
+		color: #828282;
+		font-size: 14rem;
+	}
+}
+.field{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 11rem;
+	position: relative;
+	&--date{
+		max-width: 176rem;
+	}
+	&__label{
+		display: block;
+		width: 100%;
+		font-size: 12rem;
+		line-height: normal;
+		margin: 0 0 5rem;
+	}
+	&__input{
+		margin: 0;
+		width: 100%;
+		order: 1;
+		position: relative;
+	}
+	&__input:focus + &__label{
+		color: @black;
+		font-weight: 600;
+	}
+	&__message{
+		font-size: 12rem;
+		line-height: normal;
+		color: #BDBDBD;
+		margin-top: 13rem;
+		order: 2;
+	}
+	&__hint{
+		position: absolute;
+		z-index: 1;
+		top: ~"calc(100% + 20rem)";
+		left: 0;
+		width: 100%;		
+	}
+}
+.classic-label{
+	display: flex;
+	align-items: flex-start;
+	margin: 0 0 26rem;
+	color: @black;
+	line-height: normal;
+	&--small{
+		font-size: 12rem;
+		line-height: 1.5
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+	input{
+		flex: 0 0 auto;
+		margin: 0 8rem 0 0;
+	}
+	span{
+		display: block;
+		flex: 1 1 auto;
+	}
+}
+.multifield{
+	display: flex;
+	align-items: flex-start;
+	>*{
+		flex: 1 1 auto;
+		margin-right: 12rem;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.double-field{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	>*{
+		width: ~"calc(50% - 12.5rem)";
+	}
+}
+//подсказка для заполнеия полей
+.hint-layout{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}

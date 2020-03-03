@@ -39,6 +39,9 @@ p{
 a{
 	color: @black;
 }
+em{
+	color: #4A8648;
+}
 img,video,iframe{
 	vertical-align: top;
 	max-width: 100%;
@@ -86,202 +89,8 @@ h4{
 		margin-bottom: 0;
 	}
 }
-[type=text],
-[type=tel],
-[type=email],
-[type=password],
-[type=url],
-[type=date],
-textarea{
-	display: block;
-	width: 100%;
-	font-family: inherit;
-	font-size: 14rem;
-	line-height: normal;
-	border: 1rem solid #BDBDBD;
-	border-radius: 3rem;
-	padding: 10rem 15rem;
-	margin: 0 0 11rem;
-	color: @black;
-	min-width: 0;
-	&:focus{
-		outline: none;
-		border-color: @black;
-	}
-}
-[type=checkbox]{
-	appearance: none;
-	display: inline-block;
-	width: 18rem;
-	height: 18rem;
-	border: 1rem solid #BDBDBD;
-	border-radius: 3rem;
-	flex: 0 0 auto;
-	margin: 0 10rem 0 0;
-	background-color: #fff;
-	color: transparent;
-	font: normal normal 13rem/16rem icomoon;
-	text-align: center;
-	&:checked{
-		color: @black;
-	}
-	&:focus{
-		outline: none;
-	}
-	&:before{
-		content: '\e917';
-	}
-}
-[type=radio]{
-	appearance: none;
-	display: inline-block;
-	width: 16rem;
-	height: 16rem;
-	border: 1rem solid #BDBDBD;
-	border-radius: 50%;
-	padding: 4px;
-	flex: 0 0 auto;
-	&:checked{
-		background-color: @black;
-		background-clip: content-box;
-	}
-	&:focus{
-		outline: none;
-	}
-}
-select{
-	appearance: none;
-	display: block;
-	width: 100%;
-	margin: 0 0 11rem;
-	font-size: 14rem;
-	font-family: inherit;
-	line-height: normal;
-	border: 1rem solid #BDBDBD;
-	border-radius: 3rem;
-	padding: 10rem 15rem;
-	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiNCREJEQkQiLz48L3N2Zz4K) no-repeat right 7rem center/8rem auto;
-	&::-ms-expand{
-		display: none;
-	}
-	&:focus{
-		outline: none;
-		border-color: @black;
-		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik00IDZMMC41MzU4OTggNi41MjUzM2UtMDdMNy40NjQxIDQuNjg0OTdlLTA4TDQgNloiIGZpbGw9IiMxOTFFMjciLz48L3N2Zz4K);
-	}
-}
-@supports(-moz-appearance: textfield){
-	select{
-		padding: 9rem 15rem;
-	}		
-}
-.number-field{
-	display: inline-flex;
-	align-items: center;
-	&__btn{
-		display: inline-block;
-		color: #BDBDBD;
-		width: 25rem;
-		height: 25rem;
-		border: 1.5rem solid;
-		text-align: center;
-		line-height: 22rem;
-		font-size: 16rem;
-		flex: 0 0 auto;
-		border-radius: 50%;
-		user-select: none;
-	}
-	&__input{
-		border: none;
-		padding: 5rem 0;
-		width: 55rem;
-		text-align: center;
-		margin: 0;
-	}
-}
-.field{
-	display: flex;
-	flex-direction: column;
-	margin: 0 0 11rem;
-	&--date{
-		max-width: 176rem;
-	}
-	&__label{
-		display: block;
-		width: 100%;
-		font-size: 12rem;
-		line-height: normal;
-		margin: 0 0 5rem;
-	}
-	&__input{
-		margin: 0;
-		width: 100%;
-		order: 1;
-	}
-	&__input:focus + &__label{
-		color: @black;
-		font-weight: 600;
-	}
-	&__message{
-		font-size: 12rem;
-		line-height: normal;
-		color: #BDBDBD;
-		margin-top: 13rem;
-		order: 2;
-	}
-}
-.multifield{
-	display: flex;
-	align-items: flex-start;
-	>*{
-		flex: 1 1 auto;
-		margin-right: 12rem;
-		&:last-child{
-			margin-right: 0;
-		}
-	}
-}
-.double-field{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	>*{
-		width: ~"calc(50% - 12.5rem)";
-	}
-}
 	
-//таблицы
-.table-wrapper{
-	max-width: ~"calc(100% + 40rem)";
-	margin: 0 -20rem;
-	padding: 0 20rem;
-	overflow: auto;
-}
-table{
-	width: 100%;
-	border-collapse: collapse;
-	color: @black;
-	line-height: 1.463;	
-	p{
-		margin: 0;
-	}
-}
-td,th{
-	font-weight: inherit;
-	text-align: inherit;
-	vertical-align: middle;
-	border: 1rem solid #BDBDBD;
-	padding: 13rem;
-}
-thead{
-	th{
-		border: none;
-		font-size: 12rem;
-		line-height: normal;
-		color: #828282;
-		padding: 7rem 0;
-	}
-}
+
 .wrapper{
 	padding: 0 20rem;
 }
@@ -295,8 +104,9 @@ thead{
 		font-size: 1vh/3.2;
 	}
 }
-
+@import "blocks/_form-elements";
 @import "blocks/_buttons";
+@import "blocks/_tables";
 @import "blocks/_header";
 @import "blocks/_breadcrumbs";
 @import "blocks/_blog";
@@ -326,8 +136,14 @@ thead{
 @import "blocks/_discount";
 @import "blocks/_good";
 @import "blocks/_good-block";
-//для боьшинства блоков корзины
+
+//для большинства блоков корзины
 @import "blocks/_order";
-//для боьшинства блоков личного кабинета
+
+//для большинства блоков личного кабинета
 @import "blocks/_account";
+
+//для регистрании и входа
+@import "blocks/_auth";
+
 @import "blocks/_footer";

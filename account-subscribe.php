@@ -21,7 +21,7 @@
 					<input type="email" class="field__input">
 					<span class="field__label">E-mail для рассылки</span>
 				</label>
-				<label class="classic-label subscribe-form__field">
+				<label class="classic-label classic-label--small subscribe-form__field">
 					<input type="checkbox">
 					<span>Я согласен получать e-mail рассылку</span>
 				</label>
