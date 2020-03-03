@@ -1,0 +1,73 @@
+﻿.filter{
+	&__section{
+		border-bottom: 1rem solid #E0E0E0;
+		padding: 0 20rem;
+	}
+	&__head{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20rem 0;
+	}
+	&__trigger{
+		font-size: 16rem;
+		line-height: normal;
+		font-weight: 500;
+		color: @black;
+		margin: 0;
+		padding-right: 1em;
+		flex: 1 1 auto;
+		&:after{
+			content: '\e901';
+			font-family: icomoon;
+			font-weight: 400;
+			font-size: 10.5em/16;
+			margin-left: 7em/10.5;
+			display: inline-block;
+			transition: all .3s ease;
+		}
+		&--active:after{
+			transform: scaleY(-1);
+		}
+	}
+	&__reset-btn{
+		font-size: 12rem;
+		line-height: normal;
+		flex: 0 0 auto;
+	}
+	&__content{
+		display: none;
+		padding: 0 0 20rem;
+	}
+	&__label{
+		display: flex;
+		align-items: flex-start;
+		line-height: normal;
+		margin: 0 0 14rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		[type=checkbox]{
+			width: 25rem;
+			height: 25rem;
+			line-height: 23rem;
+			font-size: 17.2rem
+		}
+		span{
+			display: block;
+			width: ~"calc(100% - 35rem)";
+			flex: 1 1 auto;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding-top: .24em;
+		}
+	}
+	&__footer{
+		padding: 20rem 20rem 30rem;
+	}
+	&__btn{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
