@@ -44,7 +44,7 @@
 						</div>
 						<div class="main-menu__item">
 							<h3 class="main-menu__title">Информация</h3>
-							<ul class="main-menu__list">
+							<ul class="main-menu__list main-menu__list--secondary">
 								<li><a href="delivery.php">О компании</a></li>
 								<li><a href="#">Оплата и доставка</a></li>
 								<li><a href="#">Условия примерки</a></li>

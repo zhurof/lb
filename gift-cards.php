@@ -101,7 +101,7 @@
 						<div class="gift-card__text">
 							<h3 class="gift-card__title">Подарочная карта на&nbsp;30000 рублей</h3>
 							<div class="gift-card__price">30 000 ₽</div>
-							<div class="gift-card__btn"><i class="icon-bag">&nbsp;</i> Положить в корзину</div>
+							<div class="gift-card__btn gift-card__btn--active"><i class="icon-bag-checked">&nbsp;</i> Товар в корзине</div>
 						</div>
 					</div>
 					<div class="gift-card">

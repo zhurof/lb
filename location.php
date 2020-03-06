@@ -7,7 +7,7 @@
 			</div>
 			<div class="modal__body">
 				<div class="location">
-					<input type="text" class="location__input">
+					<input type="text" class="location__input" placeholder="Введите название">
 					<label class="classic-label">
 						<input type="radio" name="location" value="Москва" checked>
 						<span>Москва</span>

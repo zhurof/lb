@@ -4,13 +4,13 @@
 			<div class="wrapper">
 				<ul class="breadcrumbs__list">
 					<li><a href="/">Главная</a></li>
-					<li>Вход</li>
+					<li>Регистрация</li>
 				</ul>
 			</div>
 		</div>
 		<form action="" class="auth-form">
 			<div class="wrapper">
-				<h1 class="auth-form__title">Вход</h1>
+				<h1 class="auth-form__title">Регистрация</h1>
 				<div class="auth-form__redirect">Уже зарегистрированы? <a href="sign-in.php">Войти</a></div>
 				<label class="field auth-form__field">
 					<input type="text" class="field__input" required>

@@ -244,6 +244,9 @@ select:focus {
       -ms-user-select: none;
           user-select: none;
 }
+.number-field__btn--minus {
+  line-height: 19rem;
+}
 .number-field__input {
   border: none;
   padding: 5rem 0;
@@ -1233,6 +1236,9 @@ thead th {
 .gift-card__price:last-child {
   margin-bottom: 0;
 }
+.gift-card__btn--active {
+  color: #BDBDBD;
+}
 .gift-cards {
   padding: 12rem 0 80rem;
 }
@@ -1416,6 +1422,7 @@ thead th {
 .discount__chars {
   width: auto;
   line-height: normal;
+  text-align: left;
 }
 .discount__chars td,
 .discount__chars th {
@@ -1933,6 +1940,7 @@ thead th {
   line-height: normal;
   color: #191e27;
   margin: 0 0 35rem;
+  text-align: left;
 }
 .order-block__info:last-child {
   margin-bottom: 0;
@@ -2550,6 +2558,9 @@ thead th {
   color: #191e27;
   margin: 0 0 7.5rem;
   line-height: normal;
+}
+.main-menu__list--secondary {
+  color: #828282;
 }
 .main-menu__list:last-child {
   margin-bottom: 0;
